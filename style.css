@@ -1,0 +1,243 @@
+*{
+  padding:  0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+body{
+  width:  100vw;
+  height:  100vh;
+  background-color:  rgba(0, 0, 0, 0.7);
+  position:  relative;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position:  fixed;
+  height: 50%;
+  width: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background:linear-gradient(to bottom, #DD2A7B, #211F1F);
+  height: 100%;
+}
+
+.button{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  white;
+  font-size:  30px;
+  animation: button-height 20s ease-in-out infinite alternate-reverse;
+}
+
+.button > a{
+  display: block;
+  height: 40px !important;
+  animation: logo-height 20s ease-in-out infinite alternate-reverse;
+}
+
+.button > a > i {
+  color:  #fff;
+  height: 100% !important;
+}
+
+.button:hover{
+  transform:  scaleX(1.2);
+}
+
+@keyframes button-height {
+  0%{
+    transform: scaleY(1.3);
+  }
+
+  50%{
+    transform: scaleY(0.7);
+  }
+
+  100%{
+    transform: scaleY(1.3);
+  }
+}
+
+@keyframes logo-height {
+  0%{
+    transform: scaleY(0.769230);
+  }
+
+  50%{
+    transform: scaleY(1.428571);
+  }
+
+  100%{
+    transform: scaleY(0.769230);
+  }
+}
+
+.instagram{
+  background-color: #DD2A7B;
+  animation-delay: 0s;
+}
+
+.instagram > a {
+  animation-delay: 0s;
+}
+
+.twitter{
+  background-color: #08a0e9;
+  animation-delay: -10s;
+}
+
+.twitter > a {
+  animation-delay: -10s;
+}
+
+.facebook{
+  background-color: #3b5998;
+  animation-delay: 0s;
+}
+
+.facebook > a {
+  animation-delay: 0s;
+}
+
+.snapchat{
+  background-color: #FFFC00;
+  animation-delay: -10s;
+}
+
+.snapchat > a {
+  animation-delay: -10s;
+}
+
+.snapchat > a > i{
+  color:  grey;
+}
+
+.github{
+  background-color: #211F1F;
+  animation-delay: 0s;
+}
+
+
+.popup{
+  height: 20%;
+  position: fixed;
+  width: calc(100vw - 60px);
+  left: -100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: button-height 20s ease-in-out infinite alternate-reverse;
+  transition-duration: 1s;
+  z-index: -10;
+  color: #fff;
+  font-weight: 800;
+
+}
+
+.popup > h3 {
+  animation: logo-height 20s ease-in-out infinite alternate-reverse;
+}
+
+.popup.instagram{
+  top: 0;
+  animation-delay: 0s;
+  background-color: #DD2A7B;
+}
+
+.popup.twitter{
+  top: 20vh;
+  animation-delay: -10s;
+  background-color: #08a0e9;
+}
+
+.popup.twitter > h3 {
+  animation-delay: -10s;
+}
+
+.popup.facebook{
+  top: 40%;
+  animation-delay: 0s;
+  background-color: #3b5998;
+}
+
+.popup.snapchat{
+  top: 60%;
+  animation-delay: -10s;
+  background-color: #FFFC00;
+}
+
+.popup.snapchat > h3 {
+  animation-delay: -10s;
+  color: grey;
+}
+
+.popup.github{
+  top: 80%;
+  animation-delay: 0s;
+  background-color: #211F1F;
+}
+
+.shown{
+  left: 60px !important;
+}
+
+.instagram-cover{
+  position:fixed;
+  height:  10vh;
+  width: calc(100vw - 60px);
+  top:  0;
+  left: -100vw;
+  z-index: -11;
+  background-color: #DD2A7B;
+  transition-duration: 1s;
+}
+
+.github-cover{
+  position:fixed;
+  height:  10vh;
+  width: calc(100vw - 60px);
+  bottom: 0;
+  left: -100vw;
+  z-index: -11;
+  background-color: #211F1F;
+  transition-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
